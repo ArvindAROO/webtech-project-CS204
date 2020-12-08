@@ -1,4 +1,4 @@
-# webtech-project-CS204
+# webtech-project-UE19CS204
 The official repo for CS204 webtech project
 
 ### Team Members:
