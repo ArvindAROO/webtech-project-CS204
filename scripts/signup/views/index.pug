@@ -1,0 +1,74 @@
+extends layout
+
+block content
+   .container
+      
+      h2.text-center.top-buffer Sign Up Form
+      form.form-horizontal(role="form", method="post")
+        
+
+        .form-group
+          label.col-sm-3.control-label(for="fullname") 
+           strong Full Name
+          .col-sm-9
+            input#fullname.form-control(type="text" placeholder="Full Name" autofocus="" value="")
+        .form-group
+          label.col-sm-3.control-label(for="email") 
+           strong Email
+          .col-sm-9
+            input#email.form-control(type="email" placeholder="Email")
+        .form-group
+          label.col-sm-3.control-label(for="password") 
+           strong Password
+          .col-sm-9
+            input#password.form-control(type="password" placeholder="Password")
+        .form-group
+          label.col-sm-3.control-label(for="cpassword") 
+           strong Confirm Password
+          .col-sm-9
+            input#cpassword.form-control(type="password" placeholder="Confirm password")
+        .form-group
+          label.col-sm-9.control-label(for="dob") 
+           strong Date of Birth
+          .col-sm-9
+            input#dob.form-control(type="date")
+        .form-group
+          label.col-sm-3.control-label(for="country") 
+           strong Country
+          .col-sm-9
+            select#country.form-control
+              option(value='') Please Select
+              option India
+              option Vatican City	
+              option Germany
+              option Denmark
+              option USA
+              option Canada
+              option Australia
+              option Others
+        .form-group
+          label.control-label.col-sm-3 
+           strong Gender
+          .col-sm-6
+            .row
+              .col-sm-6
+                label.radio-inline
+                  input#femaleRadio(name="gender" type="radio" value="Female")
+                  | &nbsp;Female
+              .col-sm-4
+                label.radio-inline
+                  input#maleRadio(name="gender" type="radio" value="Male")
+                  | &nbsp;Male              
+        
+        .form-group
+          .col-sm-9.col-sm-offset-3
+            .checkbox
+              label
+                input#terms(type="checkbox" value="yes" name="terms")
+                | &nbsp;I accept 
+                a(href="localhost:5000") terms
+        .form-group
+          .alert.alert-danger(role='alert', id="msgDiv")
+        .form-group
+          .col-sm-9.col-sm-offset-3
+            button#register.btn.btn-primary.btn-block(type="e") Register

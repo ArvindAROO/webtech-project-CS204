@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Travel Planner</title>
+        <link \
+        rel="stylesheet" type="text/css" href="node_modules/commoncss.css" \
+        />
+        <link rel="stylesheet" type="text/css" href="home\homepage.css" />
+    </head>
+    <body class="normal header-visible" data-browser-lang-code="en" data-browser-lang-name="english" data-prompt-msg="false">
+        <div id="pageWrapper" class="page-wrapper">
+            <header class="page-header transparent" id="pageHeader" data-show-contact-us="true">
+                <div class="header-fixer">
+                    <div class="header-contents clearfix">
+                        <div class="header-logo">
+                            <a href="/" title="Trip Planner" class="logo">
+                                <h1>Travel Planner</h1>
+                            </a>
+                            <span class="tagline">Your best travel partner</span>
+                        </div>
+                        <nav class="page-nav right">
+                            <ul>
+                                <li id="userSignup" class="">
+                                    <a rel="nofollow" class="SignupButton" href="localhost:5001">
+                                    <span>SignUp</span>
+                                    </a>
+                                </li>
+                                <li id="userLogin" class="">
+                                    <a rel="nofollow" class="login-button" href="/Login">
+                                    <span>Log in</span>
+                                    </a>
+                                </li>
+                                <li id="whereToStay" class="">
+                                    <a rel="nofollow" class="whereToStayButton" href="/Hotels">
+                                    <span>Hotels</span>
+                                    </a>
+                                </li>
+                                <li id="headerstartplanning" class="headerstartplanning hidden">
+                                    <button class="cta-button small">Start planning</button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <div class="page-content home-content clear" id="pageContent">
+                <div class="data-holder" data-max-plan-length="60">
+                    <div class="hero-image-wrap returning-user">
+                        <div class="hero-image active" style="background-image: url('images/greece.jpg');"></div>
+                    </div>
+                    <div class="hero returning-user">
+                        <div class="hero-content">
+                            <div class="hero-title">
+                                <br>
+                                <br>
+                                <h1 class="title">The easy way to plan your next trip</h1>
+                                <div class="tagline">
+                                    Plan everything<br/>
+                                    for your trip for free
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-form-col">
+                            <div id="home-shade" style="display: none;"></div>
+                            <div class="home-form">
+                                <div class="clearfix home-form-group">
+                                    <form
+                                        id="home-planning-form"
+                                        class="planning-form"
+                                        autocomplete="on"
+                                        >
+                                        <div class="steps">
+                                            <h4 class="title" title="">
+                                                Itinerary planner
+                                            </h4>
+                                            <div class="dests">
+                                                <div class="destinations ui-front">
+                                                    <div class="destination">
+                                                        <div class="tip" data-show-text="You can plan a vacation to any city, region, or country in the world."><span class="fa fa-question"></span></div>
+                                                        <input type="text" class="domain flat ui-autocomplete-input" placeholder="Enter destination (country, region, or city)" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dates clearfix">
+                                                <div class="calendar-input date-range">
+                                                    <label for="calendar-date">Start</label>
+                                                    <input type="date" id="calendar-date" name="date"><br>
+                                                    <label for="calendar-date">End</label>
+                                                    <input type="date" id="calendar-date" name="date">
+                                                    <div class="delete"></div>
+                                                </div>
+                                                <div class="dropdown">
+                                                    <button class="dropbtn">People</button>
+                                                    <div class="dropdown-content">
+                                                        <a href="#">Adults</a>
+                                                        <a href="#">Kids</a>
+                                                        <a href="#">Children</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="plan-button cta-button large">See your trip</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="howitworks"></div>
+                    <div class="get-complete-plan">
+                        <h3 class="complete-plan-title">Easy to use, easy to browse</h3>
+                        <div class="">
+                            <ul class="complete-plan-row">
+                                <li class="complete-plan-col">
+                                    <br><br>
+                                    <h5 class="title">Get a personalized trip</h5>
+                                    <div class="desc">
+                                        A complete day by day itinerary<br />
+                                        based on your preferences
+                                    </div>
+                                </li>
+                                <li class="complete-plan-col">
+                                    <br><br>
+                                    <h5 class="title">Customize it</h5>
+                                    <div class="desc">
+                                        Refine your trip. We'll find the <br />
+                                        best routes and schedules
+                                    </div>
+                                </li>
+                                <li class="complete-plan-col">
+                                    <br><br>
+                                    <h5 class="title">Book it</h5>
+                                    <div class="desc">
+                                        Choose from the best hotels<br />
+                                        and activities. Up to 50% off
+                                    </div>
+                                </li>
+                                <li class="complete-plan-col">
+                                    <br><br>
+                                    <h5 class="title">Manage it</h5>
+                                    <div class="desc">
+                                        Everything in one place.<br />
+                                        Everyone on the same page.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="trendingdestinations"></div>
+                    <div class="trending">
+                        <h3 class="trending-title">Trending destinations</h3>
+                        <div class="blocks clearfix">
+                            <a
+                                class="tile sm destination destinationDetailsLink notranslate"
+                                href="https://www.google.co.in/maps/place/Agra"
+                                >
+                            <span class="tile-inner-wrap">
+                            <span class="tile-image" style="background-image: url(images/taj.jpg)"></span>
+                            <span class="tile-title">
+                            <span>Agra</span>
+                            <span class="tile-subtitle">Trip planner</span>
+                            </span>
+                            </span>
+                            </a>
+                            <a
+                                class="tile lg destination destinationDetailsLink notranslate"
+                                href="https://www.google.co.in/maps/place/Japan"
+                                >
+                            <span class="tile-inner-wrap">
+                            <span class="tile-image" style="background-image: url(images/japan.jpg)"></span>
+                            <span class="tile-title">
+                            <span>Japan</span>
+                            <span class="tile-subtitle">Trip planner</span>
+                            </span>
+                            </span>
+                            </a>
+                            <a
+                                class="tile sm destination destinationDetailsLink notranslate"
+                                href="https://www.google.co.in/maps/place/Paris"
+                                >
+                            <span class="tile-inner-wrap">
+                            <span class="tile-image" style="background-image: url(images/paris.jpg)"></span>
+                            <span class="tile-title">
+                            <span>Paris</span>
+                            <span class="tile-subtitle">Trip planner</span>
+                            </span>
+                            </span>
+                            </a>
+                            <a
+                                class="tile sm destination destinationDetailsLink notranslate"
+                                href="https://www.google.co.in/maps/place/London"
+                                >
+                            <span class="tile-inner-wrap">
+                            <span class="tile-image" style="background-image: url(images/london.jpg)"></span>
+                            <span class="tile-title">
+                            <span>London</span>
+                            <span class="tile-subtitle">Trip planner</span>
+                            </span>
+                            </span>
+                            </a>
+                            <a
+                                class="tile sm destination destinationDetailsLink notranslate"
+                                href="https://www.google.com/maps/place/South+Korea/"
+                                >
+                            <span class="tile-inner-wrap">
+                            <span class="tile-image" style="background-image: url(images/south-korea.jpg)"></span>
+                            <span class="tile-title">
+                            <span>South Korea</span>
+                            <span class="tile-subtitle">Trip planner</span>
+                            </span>
+                            </span>
+                            </a>
+                            <a
+                                class="tile lg destination destinationDetailsLink notranslate"
+                                href="https://www.google.co.in/maps/place/Bangalore"
+                                >
+                            <span class="tile-inner-wrap">
+                            <span class="tile-image" style="background-image: url(images/banglore.jpg)"></span>
+                            <span class="tile-title">
+                            <span>Bengaluru</span>
+                            <span class="tile-subtitle">Trip planner</span>
+                            </span>
+                            </span>
+                            </a>
+                            <a
+                                class="tile sm destination destinationDetailsLink notranslate"
+                                href="https://www.google.co.in/maps/place/Las+Vegas"
+                                >
+                            <span class="tile-inner-wrap">
+                            <span class="tile-image" style="background-image: url(images/lasvegas.jpg)"></span>
+                            <span class="tile-title">
+                            <span>Las Vegas</span>
+                            <span class="tile-subtitle">Trip planner</span>
+                            </span>
+                            </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="page-footer">
+                <div class="footer-content">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="footer-title">
+                            </div>
+                            <ul class="menu-items">
+                                <li>
+                                    <p>   About us </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-3 social-media">
+                            <div class="group">
+                                <ul class="icons">
+                                    <li>
+                                        <a rel="nofollow noopener" href="https://en.wikipedia.org/wiki/Donald_Trump" class="fa fa-facebook" target="_blank"></a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow noopener" href="https://twitter.com/elonmusk" class="fa fa-twitter" target="_blank"></a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow noopener" href="https://www.instagram.com/world_record_egg/" class="fa fa-instagram" target="_blank"></a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow noopener" href="https://www.youtube.com/watch?v=-DVSyv3sHOs" class="fa fa-youtube-play" target="_blank"></a>
+                                    </li>
+                                </ul>
+                                <ul class="blog">
+                                    <li>
+                                        <a href="localhost:3000" target="_blank" rel="noopener">Visit our blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script type="text/javascript">
+            function delayFn(fn, t) {
+                return function () {
+                    setTimeout(fn, t);
+                };
+            }
+            
+            window.__primaryGATrackingId = "UA-42855545-3";
+            
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            
+            
+            
+        </script>
+        <script>function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+            }
+        </script>
+        <script>
+            window.addEventListener(
+                "load",
+                delayFn(function () {
+                    var params = {};
+            
+                    var paramsArr = [];
+                    var pl = document.createElement("script");
+                    for (key in params) {
+                        paramsArr.push(key + "=" + encodeURIComponent(params[key]));
+                    }
+                    pl.type = "text/javascript";
+                    pl.async = true;
+                    pl.src = "https://pixel.sojern.com/partner/S5xRRbV6d6uSSCox/hp?" + paramsArr.join("&");
+                    (document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(pl);
+                }, 5000)
+            );
+        </script>
+    </body>
+</html>
